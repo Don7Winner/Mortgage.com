@@ -1,0 +1,142 @@
+@media (max-width: 970px) {
+  main {
+    width: 800px;
+  }
+}
+@media (max-width: 858px) {
+  main {
+    width: 700px;
+  }
+}
+@media (max-width: 767px) {
+  main {
+    width: 650px;
+  }
+  .head h1 {
+    font-size: 1.3rem;
+  }
+  .monthly-repayment-container span {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 720px) {
+  main {
+    border-radius: 0;
+    flex-direction: column;
+    width: 100%;
+  }
+  .mortage-calculator {
+    padding: 3rem 1rem 1.5rem 1rem;
+    width: 650px;
+    margin: 0 auto;
+  }
+  .head h1 {
+    font-size: 1.3rem;
+  }
+  .radio {
+    flex-direction: row;
+    gap: 1rem;
+  }
+  button {
+    margin: 0 auto;
+    width: 300px;
+  }
+  .mortage-outcome {
+    border-radius: 0;
+  }
+  .initial-container {
+    width: 500px;
+    margin: 0 auto;
+  }
+  .completed-result {
+    width: 500px;
+    margin: 0 auto;
+  }
+  .monthly-repayment-container span {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 650px) {
+  .mortage-calculator {
+    width: 600px;
+  }
+}
+@media (max-width: 600px) {
+  .mortage-calculator {
+    width: 560px;
+  }
+}
+@media (max-width: 558px) {
+  .mortage-calculator {
+    width: 500px;
+  }
+}
+@media (max-width: 514px) {
+  .mortage-calculator {
+    width: 450px;
+  }
+  .radio {
+    flex-direction: column;
+  }
+  .mortage-number {
+    grid-template-columns: 1fr;
+  }
+  .completed-result {
+    width: 450px;
+  }
+  .initial-container {
+    width: 400px;
+  }
+}
+@media (max-width: 466px) {
+  .mortage-calculator {
+    width: 400px;
+  }
+  .completed-result {
+    width: 400px;
+  }
+  .initial-container {
+    width: 400px;
+  }
+}
+@media (max-width: 400px) {
+  .mortage-calculator {
+    width: 380px;
+  }
+  .completed-result {
+    width: 350px;
+  }
+  .initial-container {
+    width: 350px;
+  }
+}
+@media (max-width: 375px) {
+  .head h1 {
+    font-size: 1.2rem;
+  }
+  button {
+    padding: 0.5rem 0;
+    width: 100%;
+  }
+  .mortage-calculator {
+    padding: 3rem 0 1.5rem 0;
+    width: 330px;
+  }
+  .completed-result {
+    padding: 1rem;
+    width: 330px;
+  }
+  .initial-container {
+    width: 300px;
+  }
+}
+@media (max-width: 369px) {
+  .mortage-calculator {
+    padding: 3rem 0 1.5rem 0;
+    width: 300px;
+  }
+  .completed-result {
+    padding: 1rem;
+    width: 300px;
+  }
+}

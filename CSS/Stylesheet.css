@@ -1,0 +1,260 @@
+body {
+  background-color: hsl(202, 86%, 94%);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 500;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+main {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1rem;
+  width: 900px;
+  display: flex;
+}
+.mortage-calculator {
+  color: hsl(202, 55%, 16%);
+  flex-basis: 100%;
+  padding: 3rem 2rem 1.5rem;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.head h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.head p {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.head p:hover {
+  font-weight: 700;
+}
+.calculate {
+  margin-bottom: 1rem;
+}
+.calculate label {
+  display: block;
+  margin-bottom: 0.3rem;
+}
+.mortageAmonth {
+  margin-bottom: 1rem;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+}
+.flex input:hover {
+  border: 1px solid hsl(202, 55%, 16%);
+  border-left: 0;
+}
+#number {
+  border: 1px solid hsl(200, 26%, 54%);
+  border-left: 0;
+  border-radius: 0 0.3rem 0.3rem 0;
+  cursor: pointer;
+  padding-left: 1rem;
+  height: 40px;
+  width: 100%;
+  flex: 1 1 300px;
+}
+.numberAddClass {
+  background-color: navajowhite;
+  border: 1px solid hsl(4, 69%, 50%);
+}
+.currencyAddClass {
+  border-top: 2px solid hsl(4, 69%, 50%);
+  border-bottom: 2px solid hsl(4, 69%, 50%);
+  border-left: 2px solid hsl(4, 69%, 50%);
+}
+.flex input:focus {
+  outline: 0;
+}
+.flex .currency:hover {
+  border: 1px solid hsl(202, 55%, 16%);
+  border-right: none;
+}
+.flex .currency {
+  background-color: hsl(202, 86%, 94%);
+  border: 1px solid hsl(200, 26%, 54%);
+  border-right: 0;
+  border-radius: 0.3rem 0 0 0.3rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  height: 40px;
+  line-height: 2.5;
+  padding: 0.1rem 1rem 0 1rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+#errorMsgAmonth {
+  font-size: 0.8rem;
+  position: relative;
+  top: -10px;
+}
+#errorMsgYears {
+  font-size: 0.8rem;
+  position: relative;
+  top: -10px;
+}
+#errorMsgInterest {
+  font-size: 0.8rem;
+  position: relative;
+  top: -10px;
+}
+#errorMsgRadio {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+.mortage-number input {
+  border: 1px solid hsl(200, 26%, 54%);
+  border-right: none;
+  height: 40px;
+  width: 100%;
+}
+.mortage-number {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.flex-year {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.mortage-number input {
+  border-radius: 0.3rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  padding: 0 0.5rem;
+  margin-bottom: 0;
+}
+.mortage-number input:focus {
+  outline: 0;
+}
+.year {
+  background-color: hsl(202, 86%, 94%);
+  border: 1px solid hsl(200, 26%, 54%);
+  border-left: none;
+  border-radius: 0.3rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  font-weight: 700;
+  padding: 0.3rem 1rem;
+  display: flex;
+  align-items: center;
+}
+.radio-container {
+  margin-bottom: 1.5rem;
+}
+.radio-container p {
+  margin-bottom: 0.3rem;
+}
+.radio {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.radio div:hover {
+  border: 1px solid hsl(61, 70%, 52%);
+}
+.radio div {
+  border: 1px solid hsl(200, 26%, 54%);
+  border-radius: 0.3rem;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.fstRadio label {
+  cursor: pointer;
+}
+.lstRadio label {
+  cursor: pointer;
+}
+.radio input {
+  height: 20px;
+  width: 20px;
+  margin-left: 1rem;
+}
+button {
+  background-color: hsl(61, 70%, 52%);
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem 0;
+  width: 250px;
+}
+button:hover {
+  background-color: hsl(61, 72%, 72%);
+}
+.mortage-outcome {
+  background-color: hsl(202, 55%, 16%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 0 1rem 1rem 4rem;
+  flex-basis: 100%;
+  display: flex;
+}
+.mortage-outcome p {
+  color: hsl(203, 41%, 72%);
+  margin-top: 1rem;
+}
+.initial-container {
+  padding: 2rem;
+  align-self: center;
+  text-align: center;
+  /* display: none; */
+}
+/* THE STARTING OF COMPLETED OUTCOME  */
+.completed-result {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  display: none;
+}
+.completed-result-head {
+  margin-bottom: 2.5rem;
+}
+.result-show {
+  background-color: hsl(201, 88%, 10%);
+  border-top: 0.3rem solid hsl(61, 70%, 52%);
+  border-radius: 0.5rem;
+  padding: 0 2rem;
+}
+.monthly-repayment-container {
+  border-bottom: 1px solid hsl(203, 6%, 49%);
+  margin-bottom: 1.5rem;
+}
+.monthly-repayment-container span {
+  color: hsl(61, 70%, 52%);
+  font-size: 3rem;
+  display: block;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.totalPayment-container {
+  padding-bottom: 1.5rem;
+}
+.totalPayment-container span {
+  font-size: 1.5rem;
+  display: block;
+  margin-top: 0.5rem;
+}
